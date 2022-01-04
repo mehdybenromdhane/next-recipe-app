@@ -23,13 +23,7 @@ function MyApp({ Component, pageProps }) {
             <img src="logo.png" alt="logo" />
           </Link>
           <div className="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item active">
-                <a className="nav-link" href="/">
-                  Recipes <span classNameName="sr-only">(current)</span>
-                </a>
-              </li>
-            </ul>
+            <ul className="navbar-nav ml-auto"></ul>
 
             <form className="form-inline my-2 my-lg-0">
               <input
