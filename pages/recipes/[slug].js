@@ -52,15 +52,15 @@ export default function OneRecipe({ data, preview }) {
 
   return (
     <>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2 col-xs-12">
-            <div class="share">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-2 col-xs-12">
+            <div className="share">
               <p>Share</p>
               <ul>
                 <li>
                   <svg
-                    class="svgIcon-use"
+                    className="svgIcon-use"
                     width="29"
                     height="29"
                     viewbox="0 0 29 29"
@@ -70,7 +70,7 @@ export default function OneRecipe({ data, preview }) {
                 </li>
                 <li>
                   <svg
-                    class="svgIcon-use"
+                    className="svgIcon-use"
                     width="29"
                     height="29"
                     viewbox="0 0 29 29"
@@ -79,59 +79,59 @@ export default function OneRecipe({ data, preview }) {
                   </svg>
                 </li>
               </ul>
-              <div class="sep"></div>
+              <div className="sep"></div>
               <p>Talk</p>
               <ul></ul>
             </div>
           </div>
 
-          <div class="col-md-8 col-md-offset-2 col-xs-12">
-            <div class="mainheading">
-              <div class="row post-top-meta">
-                <div class="col-md-2">
+          <div className="col-md-8 col-md-offset-2 col-xs-12">
+            <div className="mainheading">
+              <div className="row post-top-meta">
+                <div className="col-md-2">
                   <a href="author.html">
                     <img
-                      class="author-thumb"
+                      className="author-thumb"
                       src={urlFor(recipe?.chef?.image).url()}
                       alt="Sal"
                     />
                   </a>
                 </div>
-                <div class="col-md-10">
-                  <a class="link-dark" href="author.html">
+                <div className="col-md-10">
+                  <a className="link-dark" href="author.html">
                     {recipe?.chef?.name}
                   </a>
-                  <a href="#" class="btn follow">
+                  <a href="#" className="btn follow">
                     Follow
                   </a>
                   <PortableText
                     blocks={recipe?.chef?.bio}
-                    className="author-description"
+                    classNameName="author-description"
                   />
-                  <span class="post-date">{recipe?.chef?._updatedAt}</span>
-                  <span class="dot"></span>
-                  <span class="post-read">Last update</span>
+                  <span className="post-date">{recipe?.chef?._updatedAt}</span>
+                  <span className="dot"></span>
+                  <span className="post-read">Last update</span>
                 </div>
               </div>
 
-              <h1 class="posttitle">{recipe?.name} </h1>
-              <button className="btn follow" onClick={addLike}>
+              <h1 className="posttitle">{recipe?.name} </h1>
+              <button classNameName="btn follow" onClick={addLike}>
                 {likes} ❤️
               </button>
             </div>
 
             <img
-              class="featured-image img-fluid"
+              className="featured-image img-fluid"
               src={urlFor(recipe?.mainImage).url()}
               alt={recipe.name}
             />
 
-            <div class="article-post">
+            <div className="article-post">
               <p>{recipe.description}</p>
               <h2>Ingredients</h2>
               <p>
                 {recipe.ingredient?.map((ingredient) => (
-                  <li key={ingredient._key} className="ingredient">
+                  <li key={ingredient._key} classNameName="ingredient">
                     {ingredient?.wholeNumber}
                     {ingredient?.fraction} {ingredient?.unit}
                     <br />
@@ -142,7 +142,7 @@ export default function OneRecipe({ data, preview }) {
               <h2>Instructions</h2>
               <PortableText
                 blocks={recipe?.instructions}
-                className="instructions"
+                classNameName="instructions"
               />
             </div>
           </div>

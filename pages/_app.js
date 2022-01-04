@@ -6,9 +6,9 @@ import "../styles/globals.css";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <nav class="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
+      <nav className="navbar navbar-toggleable-md navbar-light bg-white fixed-top mediumnavigation">
         <button
-          class="navbar-toggler navbar-toggler-right"
+          className="navbar-toggler navbar-toggler-right"
           type="button"
           data-toggle="collapse"
           data-target="#navbarsExampleDefault"
@@ -16,30 +16,30 @@ function MyApp({ Component, pageProps }) {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="container">
-          <Link class="navbar-brand" href="/">
+        <div className="container">
+          <Link className="navbar-brand" href="/">
             <img src="logo.png" alt="logo" />
           </Link>
-          <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="/">
-                  Recipes <span className="sr-only">(current)</span>
+          <div className="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item active">
+                <a className="nav-link" href="/">
+                  Recipes <span classNameName="sr-only">(current)</span>
                 </a>
               </li>
             </ul>
 
-            <form class="form-inline my-2 my-lg-0">
+            <form className="form-inline my-2 my-lg-0">
               <input
-                class="form-control mr-sm-2"
+                className="form-control mr-sm-2"
                 type="text"
                 placeholder="Search"
               />
-              <span class="search-icon">
+              <span className="search-icon">
                 <svg
-                  class="svgIcon-use"
+                  className="svgIcon-use"
                   width="25"
                   height="25"
                   viewbox="0 0 25 25"
